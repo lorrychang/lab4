@@ -104,7 +104,13 @@ public class PokerTableController implements Initializable {
 	//TODO: Lab #4 - Complete (fix) setiPlayerPosition
 	public void btnSitLeave_Click(ActionEvent event) {
 
-		// Set the PlayerPosition in the Player
+		//the button is to determine the which control pressed the button
+		Button btn = (Button)event.getSource();
+		
+		//Set the PlayerPosition in the Player (North)
+		mainApp.getPlayer().setiPlayerPosition(2);
+		
+		// Set the PlayerPosition in the Player (South)
 		mainApp.getPlayer().setiPlayerPosition(1);
 
 		// Build an Action message
